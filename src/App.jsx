@@ -1,23 +1,16 @@
-
+// Importamos los estilos de App.css
+import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard'
 // Exportamos el componente App para el main.jsx
 export function App(){
     return (
-        <article>
-            <header>
-                <img src="https://unavatar.io/midudev" alt="El avatar" />
-                <div>
-                    <strong>Luis David Cusi Gonzales</strong>
-                    <span>@cusiluis06</span>
-                </div>
-            </header>      
-
-            <aside>
-                <button>
-                    Seguir
-                </button>
-            </aside>      
-        </article>
+        <>
+        <TwitterFollowCard isFollowing={true} userName="midudev" name="Luis David Cusi Gonzales"/>
+        <TwitterFollowCard isFollowing={false}userName="pheralb" name="Lidia Leonor Cusi Gonzales"/>
+        <TwitterFollowCard isFollowing={true} userName="elonmusk" name="Lidia Leonor Cusi Gonzales"/>
+        </>
         
+     
     )
 }
 
