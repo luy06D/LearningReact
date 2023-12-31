@@ -37,7 +37,18 @@ gap: 4px;
     cursor: pointer;
 }
 
-.btn-seguir :hover{
-    color: rgb(130, 133, 133);
+.btn-seguir:hover{
+    background-color: rgb(182, 178, 178);
+
+}
+
+.btn-seguir.is-following{
+    background-color: red;
+    color: #fff;
+}
+
+.btn-seguir.is-following:hover{
+    background-color: #e95454;
+
 }
 

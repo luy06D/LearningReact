@@ -5,9 +5,17 @@ import { TwitterFollowCard } from './TwitterFollowCard'
 export function App(){
     return (
         <>
-        <TwitterFollowCard isFollowing={true} userName="midudev" name="Luis David Cusi Gonzales"/>
-        <TwitterFollowCard isFollowing={false}userName="pheralb" name="Lidia Leonor Cusi Gonzales"/>
-        <TwitterFollowCard isFollowing={true} userName="elonmusk" name="Lidia Leonor Cusi Gonzales"/>
+        <TwitterFollowCard 
+        userName="midudev" 
+        name="Luis David Cusi Gonzales"/>
+
+        <TwitterFollowCard 
+        userName="pheralb" 
+        name="Juan Gonzales"/>
+
+        <TwitterFollowCard
+         userName="elonmusk" 
+         name="Lidia Leonor Cusi Gonzales"/>
         </>
         
      
