@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from '@nextui-org/button'
 // Este componente si se podra reutilizar - atravez de parametros
 import Luis_img from './img/userLuis2.jpg'
 export function TwitterFollowCard({userName, name}){
@@ -7,7 +8,7 @@ export function TwitterFollowCard({userName, name}){
     // y la segunda tiene la forma de actualizar
     const [isFollowing, setIsFollowing] = useState(false)
 
-    // OPERACION TERNARIO
+    // OPERADOR TERNARIO
     // si isFolliwing es true el texto sera siguiendo caso contrario sera seguir
     const textBtn = isFollowing ? 'Siguiendo': 'Seguir'
     //Si isFollwing es true se le agrega la clase is-following
@@ -34,6 +35,7 @@ export function TwitterFollowCard({userName, name}){
         </header>      
 
         <aside>
+       
             <button className={btnClassName} onClick={handleClick}>
                 {textBtn}
             </button>
